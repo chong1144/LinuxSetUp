@@ -1,4 +1,4 @@
-sudo apt install g++ make cmake build-essential zsh curl wget neovim tmux unzip clang -y
+sudo apt install g++ make cmake build-essential zsh curl wget neovim tmux unzip clang python3-pip -y
 
 # Set up tmux
 cp ./tmux.conf ~/.tmux.conf
@@ -7,6 +7,7 @@ cp ./tmux.conf ~/.tmux.conf
 mkdir -p ~/.config &> /dev/null
 tar xzvf nvim.tar.bz2 
 mv nvim ~/.config/
+python3 -m pip install pynvim
 
 # Clean
 sudo apt autoremove
