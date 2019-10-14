@@ -1,3 +1,6 @@
+# Todo Update the config of nvim and tmux
+
+
 sudo apt install g++ make cmake build-essential zsh curl wget neovim tmux unzip clang python3-pip -y
 
 # Set up tmux
@@ -8,6 +11,7 @@ mkdir -p ~/.config &> /dev/null
 tar xzvf nvim.tar.bz2 
 mv nvim ~/.config/
 python3 -m pip install pynvim
+python3 -m pip install jedi
 
 # Clean
 sudo apt autoremove
